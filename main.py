@@ -5,6 +5,9 @@ class Match:
         self.team_2 = team_2
         self.timing = timing
 
+    def __str__(self):
+        return f"Location: {self.location}, Team 1: {self.team_1}, Team 2: {self.team_2}, Timing: {self.timing}"
+
 
 class MatchSearcher:
     def __init__(self, match_list):
@@ -84,3 +87,7 @@ def main():
 
         else:
             print("Invalid choice")
+
+
+if __name__ == "__main__":
+    main()
